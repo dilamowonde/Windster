@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <nav class="border-b fixed w-full z-100">
+      <div class="p-3">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center justify-start">
+            <a href="#" class="flex ml-3">
+              <img src="./img/logo.svg" class="w-6 mr-2" alt="Logo">
+              <span class="self-center text-xl font-bold whitespace-nowrap">
+                Windster
+              </span>
+            </a>
+
+            <form class="hidden lg:block lg:pl-32" action="#">
+              <label for="#" class="sr-only">Search</label>
+              <div class="mt-1 relative">
+                <div
+                  class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+                >
+                  <svg
+                    class="w-5 h-5 text-gray-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+                <input
+                  class="border rounded-lg bg-gray-50 border-gray-300 focus:outline-none focus:ring-cyan-600 focus:border-cyan-600 pl-10 p-2.5"
+                  placeholder="Search"
+                />
+              </div>
+            </form>
+          </div>
+
+          <div class="flex items-center">
+            <div class="hidden lg:flex">
+              <span class="text-gray-600 mr-5 self-center">Made With Love ❤</span>
+              <div class="flex ">
+                <a href="github-button" class="text-xs  text-gray-600 bg-gray-200 rounded-bl rounded-tl border-r-0 border-gray-300 border px-2 py-1 mr-0 self-center">⭐Star</a>
+                <a href="github-button" class="text-xs  border p-2 rounded-br rounded-tr border-l-0 border-gray-300 ml-0 px-2 py-1 self-center">565</a>
+              </div>
+            </div>
+            
+            <a href="#" class="hidden ml-5 whitespace-nowrap sm:inline-flex text-white bg-cyan-600 px-5 py-2.5 hover:bg-cyan-700 font-medium text-sm focus:ring-4 rounded-lg" >
+              <svg class="svg-inline--fa fa-gem -ml-1 mr-2 h-4 w-4" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="gem" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M378.7 32H133.3L256 182.7L378.7 32zM512 192l-107.4-141.3L289.6 192H512zM107.4 50.67L0 192h222.4L107.4 50.67zM244.3 474.9C247.3 478.2 251.6 480 256 480s8.653-1.828 11.67-5.062L510.6 224H1.365L244.3 474.9z"></path></svg>
+              Upgrade to Pro
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    outline: 0;
+  }
+  .widget {
+    display: inline-block;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+      sans-serif;
+    font-size: 0;
+    line-height: 0;
+    white-space: nowrap;
+  }
+  .btn,
+  .social-count {
+    position: relative;
+    display: inline-block;
+    display: inline-flex;
+    height: 14px;
+    padding: 2px 5px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 14px;
+    vertical-align: bottom;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-repeat: repeat-x;
+    background-position: -1px -1px;
+    background-size: 110% 110%;
+    border: 1px solid;
+  }
+  .btn {
+    border-radius: 0.25em;
+  }
+  .btn:not(:last-child) {
+    border-radius: 0.25em 0 0 0.25em;
+  }
+  .social-count {
+    border-left: 0;
+    border-radius: 0 0.25em 0.25em 0;
+  }
+  .widget-lg .btn,
+  .widget-lg .social-count {
+    height: 16px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .octicon {
+    display: inline-block;
+    vertical-align: text-top;
+    fill: currentColor;
+    overflow: visible;
+  }
+  .btn {
+    color: #c9d1d9;
+    background-color: #1a1e23;
+    border-color: #2f3439;
+    border-color: rgba(240, 246, 252, 0.1);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%2321262d'/%3e%3cstop offset='90%25' stop-color='%231a1e23'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");
+    background-image: -moz-linear-gradient(top, #21262d, #1a1e23 90%);
+    background-image: linear-gradient(180deg, #21262d, #1a1e23 90%);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FF21262D', endColorstr='#FF191D22');
+  }
+  :root .btn {
+    filter: none;
+  }
+  .btn:focus,
+  .btn:hover {
+    background-color: #292e33;
+    background-position: 0 -0.5em;
+    border-color: #8b949e;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%2330363d'/%3e%3cstop offset='90%25' stop-color='%23292e33'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");
+    background-image: -moz-linear-gradient(top, #30363d, #292e33 90%);
+    background-image: linear-gradient(180deg, #30363d, #292e33 90%);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FF30363D', endColorstr='#FF282D32');
+  }
+  :root .btn:focus,
+  :root .btn:hover {
+    filter: none;
+  }
+  .btn:active {
+    background-color: #161719;
+    border-color: #8b949e;
+    box-shadow: inset 0 0.15em 0.3em rgba(1, 4, 9, 0.15);
+    background-image: none;
+    filter: none;
+  }
+  .social-count {
+    color: #c9d1d9;
+    background-color: #0d1117;
+    border-color: #24282e;
+    border-color: rgba(240, 246, 252, 0.1);
+  }
+  .social-count:focus,
+  .social-count:hover {
+    color: #58a6ff;
+  }
+  .octicon-heart {
+    color: #db61a2;
+  }
+  @media (prefers-color-scheme: light) {
+    .btn {
+      color: #24292f;
+      background-color: #ebf0f4;
+      border-color: #ccd1d5;
+      border-color: rgba(27, 31, 36, 0.15);
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23f6f8fa'/%3e%3cstop offset='90%25' stop-color='%23ebf0f4'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");
+      background-image: -moz-linear-gradient(top, #f6f8fa, #ebf0f4 90%);
+      background-image: linear-gradient(180deg, #f6f8fa, #ebf0f4 90%);
+      filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFF6F8FA', endColorstr='#FFEAEFF3');
+    }
+    :root .btn {
+      filter: none;
+    }
+    .btn:focus,
+    .btn:hover {
+      background-color: #e9ebef;
+      background-position: 0 -0.5em;
+      border-color: #caccd1;
+      border-color: rgba(27, 31, 36, 0.15);
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23f3f4f6'/%3e%3cstop offset='90%25' stop-color='%23e9ebef'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");
+      background-image: -moz-linear-gradient(top, #f3f4f6, #e9ebef 90%);
+      background-image: linear-gradient(180deg, #f3f4f6, #e9ebef 90%);
+      filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFF3F4F6', endColorstr='#FFE8EAEE');
+    }
+    :root .btn:focus,
+    :root .btn:hover {
+      filter: none;
+    }
+    .btn:active {
+      background-color: #e5e9ed;
+      border-color: #c7cbcf;
+      border-color: rgba(27, 31, 36, 0.15);
+      box-shadow: inset 0 0.15em 0.3em rgba(27, 31, 36, 0.15);
+      background-image: none;
+      filter: none;
+    }
+    .social-count {
+      color: #24292f;
+      background-color: #fff;
+      border-color: #ddddde;
+      border-color: rgba(27, 31, 36, 0.15);
+    }
+    .social-count:focus,
+    .social-count:hover {
+      color: #0969da;
+    }
+    .octicon-heart {
+      color: #bf3989;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    .btn {
+      color: #24292f;
+      background-color: #ebf0f4;
+      border-color: #ccd1d5;
+      border-color: rgba(27, 31, 36, 0.15);
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23f6f8fa'/%3e%3cstop offset='90%25' stop-color='%23ebf0f4'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");
+      background-image: -moz-linear-gradient(top, #f6f8fa, #ebf0f4 90%);
+      background-image: linear-gradient(180deg, #f6f8fa, #ebf0f4 90%);
+      filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFF6F8FA', endColorstr='#FFEAEFF3');
+    }
+    :root .btn {
+      filter: none;
+    }
+    .btn:focus,
+    .btn:hover {
+      background-color: #e9ebef;
+      background-position: 0 -0.5em;
+      border-color: #caccd1;
+      border-color: rgba(27, 31, 36, 0.15);
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23f3f4f6'/%3e%3cstop offset='90%25' stop-color='%23e9ebef'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");
+      background-image: -moz-linear-gradient(top, #f3f4f6, #e9ebef 90%);
+      background-image: linear-gradient(180deg, #f3f4f6, #e9ebef 90%);
+      filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFF3F4F6', endColorstr='#FFE8EAEE');
+    }
+    :root .btn:focus,
+    :root .btn:hover {
+      filter: none;
+    }
+    .btn:active {
+      background-color: #e5e9ed;
+      border-color: #c7cbcf;
+      border-color: rgba(27, 31, 36, 0.15);
+      box-shadow: inset 0 0.15em 0.3em rgba(27, 31, 36, 0.15);
+      background-image: none;
+      filter: none;
+    }
+    .social-count {
+      color: #24292f;
+      background-color: #fff;
+      border-color: #ddddde;
+      border-color: rgba(27, 31, 36, 0.15);
+    }
+    .social-count:focus,
+    .social-count:hover {
+      color: #0969da;
+    }
+    .octicon-heart {
+      color: #bf3989;
+    }
+  }
+</style>
